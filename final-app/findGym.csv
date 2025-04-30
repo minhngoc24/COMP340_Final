@@ -1,0 +1,101 @@
+user_id,addr,radius
+1, 123 Fit St, 5
+2, 456 Gym Ave, 10
+3, 789 Sweat Blvd, 3
+4, 321 Muscle Rd, 8
+5, 654 Power Ln, 7
+6, 111 Lift Way, 6
+7, 222 Gain St, 10
+8, 333 Pump Dr, 4
+9, 444 Burn Ct, 9
+10, 555 Core Blvd, 5
+11, 666 Strength Rd, 12
+12, 777 Speedy Way, 6
+13, 888 Fitnastic Ave, 8
+14, 999 Elite Blvd, 10
+15, 100 Hero Rd, 7
+16, 200 Titan Way, 5
+17, 300 Move St, 6
+18, 400 Jump Ave, 4
+19, 500 Train Ln, 7
+20, 600 Champ Dr, 9
+21, 664 Grit Way, 9
+22, 295 Flex Ln, 6
+23, 300 Core Rd, 4
+24, 532 Grit Way, 6
+25, 953 Iron Ave, 15
+26, 142 Flex Circle, 12
+27, 203 Grit Dr, 4
+28, 301 Delta Trail, 8
+29, 978 Delta Blvd, 5
+30, 755 Delta Rd, 10
+31, 739 Core Ln, 15
+32, 679 Pulse Dr, 7
+33, 961 Alpha Dr, 11
+34, 878 Grit Way, 10
+35, 236 Grit Ln, 6
+36, 649 Delta Ave, 8
+37, 221 Grit Blvd, 11
+38, 926 Core Dr, 10
+39, 844 Fox Ct, 7
+40, 424 Delta St, 5
+41, 980 Echo Trail, 4
+42, 372 Grit Dr, 12
+43, 642 Alpha Way, 9
+44, 431 Echo Ln, 6
+45, 569 Delta Blvd, 5
+46, 798 Core Ct, 5
+47, 789 Grit Circle, 10
+48, 303 Iron St, 11
+49, 997 Iron Circle, 11
+50, 939 Core Ct, 10
+51, 911 Strength Dr, Boston, MA, 5
+52, 543 Cardio Blvd, Miami, FL, 6
+53, 350 Strength Dr, Chicago, IL, 11
+54, 723 HIIT Pl, Chicago, IL, 9
+55, 142 Muscle Rd, Denver, CO, 6
+56, 797 Strength Dr, Seattle, WA, 10
+57, 188 Wellness Ave, Portland, OR, 11
+58, 825 HIIT Pl, San Diego, CA, 4
+59, 169 Muscle Rd, Miami, FL, 4
+60, 130 Fitness Ave, Austin, TX, 5
+61, 756 Muscle Rd, Portland, OR, 9
+62, 517 Muscle Rd, Portland, OR, 11
+63, 344 Muscle Rd, Austin, TX, 7
+64, 576 Strength Dr, Miami, FL, 8
+65, 680 Wellness Ave, Boston, MA, 10
+66, 114 Spin Cir, Portland, OR, 13
+67, 313 Strength Dr, Seattle, WA, 14
+68, 175 Wellness Ave, Boston, MA, 10
+69, 895 Lift Ln, Seattle, WA, 8
+70, 506 Muscle Rd, San Diego, CA, 14
+71, 694 Wellness Ave, Austin, TX, 3
+72, 314 Muscle Rd, Chicago, IL, 14
+73, 989 Spin Cir, Portland, OR, 12
+74, 735 Cardio Blvd, Denver, CO, 12
+75, 152 Balance Blvd, Austin, TX, 12
+76, 459 Strength Dr, Austin, TX, 12
+77, 417 Muscle Rd, Boston, MA, 11
+78, 547 Spin Cir, Seattle, WA, 13
+79, 157 Wellness Ave, Denver, CO, 8
+80, 720 Muscle Rd, Seattle, WA, 13
+81, 258 Strength Dr, Seattle, WA, 13
+82, 531 Wellness Ave, Los Angeles, CA, 5
+83, 708 Spin Cir, Austin, TX, 15
+84, 137 Yoga St, Miami, FL, 4
+85, 570 Spin Cir, New York, NY, 11
+86, 414 Cardio Blvd, Seattle, WA, 9
+87, 367 Fitness Ave, New York, NY, 10
+88, 917 HIIT Pl, Los Angeles, CA, 13
+89, 528 Muscle Rd, Chicago, IL, 8
+90, 180 Strength Dr, San Diego, CA, 11
+91, 455 Wellness Ave, Boston, MA, 11
+92, 537 Balance Blvd, Portland, OR, 14
+93, 489 Muscle Rd, New York, NY, 10
+94, 896 Yoga St, Chicago, IL, 8
+95, 274 Balance Blvd, Portland, OR, 3
+96, 590 Muscle Rd, Austin, TX, 12
+97, 258 Cardio Blvd, Seattle, WA, 6
+98, 383 Lift Ln, Los Angeles, CA, 11
+99, 316 Balance Blvd, Denver, CO, 14
+100, 648 Yoga St, Chicago, IL, 6
