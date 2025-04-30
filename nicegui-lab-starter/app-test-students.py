@@ -1,6 +1,6 @@
 # Script to let us test the functionality of the user table.
 # Can add a user, print them, read from CSV.
-
+# ...
 import psycopg
 from psycopg.rows import dict_row
 from dbinfo import *
