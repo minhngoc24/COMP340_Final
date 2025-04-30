@@ -1,0 +1,156 @@
+user_id,name,age,weight,goal,allergy,streak,playlist
+1, Emma Tran, 25, 160, Lose Weight, Peanuts, 10, Pop
+2, Liam Smith, 32, 185, Build Muscle, , 21, Hip Hop
+3, Olivia Chen, 19, 140, Stay Fit, Gluten, 5, EDM
+4, Noah Kim, 28, 200, Lose Weight, , 30, Rock
+5, Ava Johnson, 35, 175, Increase Endurance, Lactose, 14, Classical
+6, William Nguyen, 22, 155, Gain Weight, , 7, Indie
+7, Isabella Davis, 45, 190, Lower Blood Pressure, Shellfish, 3, Jazz
+8, James Wilson, 30, 170, Stay Fit, , 25, Country
+9, Sophia Lopez, 27, 145, Tone Muscles, Soy, 9, R&B
+10, Benjamin Hill, 40, 210, Build Muscle, Eggs, 16, Metal
+11, Mia Brooks, 23, 135, Gain Weight, , 12, Reggaeton
+12, Elijah Lee, 38, 198, Lose Weight, Gluten, 8, Pop
+13, Charlotte Evans, 21, 150, Stay Fit, , 11, Hip Hop
+14, Lucas Reed, 29, 160, Increase Endurance, Peanuts, 17, EDM
+15, Amelia Clark, 33, 190, Build Muscle, , 20, Rock
+16, Henry Baker, 26, 155, Lose Weight, Dairy, 6, Indie
+17, Harper Allen, 31, 175, Tone Muscles, , 13, Jazz
+18, Ethan Scott, 36, 200, Lower Blood Pressure, Shellfish, 2, Classical
+19, Evelyn Rivera, 24, 142, Stay Fit, , 19, Country
+20, Daniel Perez, 41, 220, Build Muscle, Soy, 4, Metal
+21, Zoe Martinez, 27, 138, Gain Weight, , 10, Reggaeton
+22, Logan Turner, 34, 210, Lower Blood Pressure, Gluten, 6, Jazz
+23, Grace Murphy, 22, 130, Tone Muscles, , 8, Pop
+24, Alexander Wright, 39, 195, Build Muscle, Peanuts, 15, Hip Hop
+25, Chloe Adams, 26, 148, Stay Fit, , 18, EDM
+26, Michael Scott, 37, 185, Increase Endurance, Shellfish, 5, Rock
+27, Lily Carter, 29, 165, Lose Weight, Dairy, 9, Indie
+28, Matthew Nelson, 31, 175, Gain Weight, , 7, Classical
+29, Emily Walker, 20, 140, Stay Fit, Eggs, 12, Country
+30, Jackson Bell, 43, 230, Build Muscle, , 22, Metal
+30, Alex Walker_9, 41, 223, Gain Weight, Dairy, 21, Classical
+31, Riley Young_10, 28, 192, Lose Weight, Eggs, 30, Metal
+32, Riley Young_11, 40, 175, Lower Blood Pressure, Peanuts, 30, Hip Hop
+33, Riley King_12, 23, 189, Tone Muscles, Soy, 10, R&B
+34, Alex Brown_13, 24, 139, Stay Fit, Gluten, 15, Metal
+35, Dylan Walker_14, 25, 140, Increase Endurance, Gluten, 11, Jazz
+36, Riley Hall_15, 37, 220, Lose Weight, Eggs, 7, R&B
+37, Morgan Young_16, 24, 195, Lose Weight, Dairy, 27, Classical
+38, Alex Walker_17, 36, 207, Lower Blood Pressure, , 15, EDM
+39, Peyton Hall_18, 22, 224, Gain Weight, Gluten, 20, Hip Hop
+40, Taylor Brown_19, 29, 153, Lower Blood Pressure, Eggs, 24, Hip Hop
+41, Dylan King_20, 28, 226, Increase Endurance, Shellfish, 16, Indie
+42, Jamie Young_21, 26, 155, Gain Weight, Lactose, 28, R&B
+43, Peyton Green_22, 29, 167, Increase Endurance, Dairy, 19, Indie
+44, Avery Scott_23, 19, 162, Increase Endurance, Soy, 24, Pop
+45, Jordan Walker_24, 36, 208, Gain Weight, , 1, Country
+46, Avery Lopez_25, 22, 133, Tone Muscles, , 2, Metal
+47, Peyton Scott_26, 34, 176, Tone Muscles, Soy, 24, Classical
+48, Casey Brown_27, 28, 157, Increase Endurance, Gluten, 11, Metal
+49, Jordan Walker_28, 46, 130, Lower Blood Pressure, , 14, EDM
+50, Dylan Walker_29, 24, 177, Build Muscle, , 18, Classical
+51, Casey Lopez_30, 35, 178, Lose Weight, Shellfish, 28, Indie
+52, Dylan Hall_31, 50, 197, Lower Blood Pressure, Eggs, 3, Metal
+53, Peyton Walker_32, 18, 178, Build Muscle, Lactose, 9, Metal
+54, Morgan Green_33, 20, 149, Lose Weight, , 11, Classical
+55, Casey Walker_34, 44, 132, Increase Endurance, Dairy, 5, Pop
+56, Riley Brown_35, 45, 222, Lower Blood Pressure, Eggs, 23, Reggaeton
+57, Morgan Brown_36, 19, 163, Tone Muscles, Eggs, 23, Reggaeton
+58, Morgan Lopez_37, 25, 155, Stay Fit, Soy, 30, Rock
+59, Jamie Walker_38, 49, 137, Stay Fit, , 14, R&B
+60, Riley Lopez_39, 26, 202, Gain Weight, , 28, Reggaeton
+61, Avery Brown_40, 28, 200, Stay Fit, Shellfish, 6, Classical
+62, Jamie Young_41, 38, 159, Build Muscle, , 6, Indie
+63, Jordan Scott_42, 37, 184, Build Muscle, , 22, EDM
+64, Alex Scott_43, 45, 167, Increase Endurance, Gluten, 5, Classical
+65, Casey Brown_44, 38, 143, Increase Endurance, Gluten, 10, Classical
+66, Dylan Lee_45, 50, 183, Lose Weight, , 22, Classical
+67, Avery Scott_46, 38, 177, Lower Blood Pressure, , 29, Reggaeton
+68, Jordan Scott_47, 27, 166, Gain Weight, , 15, Country
+69, Avery King_48, 37, 169, Stay Fit, , 1, Classical
+70, Casey Young_49, 22, 131, Gain Weight, Lactose, 7, Classical
+70, Casey Young_49, 22, 131, Gain Weight, Lactose, 7, Classical
+71, Morgan Scott_50, 45, 143, Lower Blood Pressure, Lactose, 20, Reggaeton
+72, Taylor Walker_51, 37, 140, Tone Muscles, Dairy, 19, Metal
+73, Jamie Young_52, 23, 205, Build Muscle, Peanuts, 27, Country
+74, Casey Lopez_53, 42, 132, Stay Fit, Lactose, 4, Country
+75, Alex Walker_54, 48, 197, Stay Fit, Gluten, 23, Hip Hop
+76, Casey Hall_55, 20, 181, Tone Muscles, Lactose, 17, Country
+77, Jamie King_56, 40, 141, Stay Fit, , 6, Country
+78, Dylan Walker_57, 29, 139, Build Muscle, Soy, 9, Rock
+79, Jamie Walker_58, 47, 166, Build Muscle, Shellfish, 8, Country
+80, Peyton Brown_59, 40, 173, Build Muscle, , 14, Reggaeton
+81, Morgan Lee_60, 25, 215, Stay Fit, Eggs, 14, Classical
+82, Avery Young_61, 44, 206, Gain Weight, Eggs, 26, Rock
+83, Dylan Young_62, 26, 143, Increase Endurance, Lactose, 18, Hip Hop
+84, Riley Wright_63, 19, 130, Build Muscle, , 13, Pop
+85, Taylor Walker_64, 25, 187, Lower Blood Pressure, Eggs, 16, Classical
+86, Casey Scott_65, 20, 145, Stay Fit, Peanuts, 21, Country
+87, Casey Lopez_66, 47, 206, Lower Blood Pressure, Dairy, 12, Hip Hop
+88, Alex Lopez_67, 39, 215, Lose Weight, Lactose, 18, Jazz
+89, Casey King_68, 47, 139, Stay Fit, , 30, Jazz
+90, Avery Wright_69, 46, 195, Increase Endurance, Gluten, 20, Indie
+91, Dylan Walker_70, 34, 209, Lose Weight, , 24, EDM
+92, Jamie Hall_71, 37, 207, Gain Weight, Eggs, 12, Rock
+93, Jordan Young_72, 39, 150, Build Muscle, Gluten, 2, Pop
+94, Taylor Hall_73, 50, 190, Build Muscle, Dairy, 27, R&B
+95, Jamie Walker_74, 40, 209, Gain Weight, , 20, Pop
+96, Morgan Hall_75, 40, 184, Increase Endurance, Soy, 23, Indie
+97, Jamie Young_76, 45, 151, Stay Fit, Peanuts, 25, Classical
+98, Jordan Green_77, 41, 204, Lower Blood Pressure, , 8, Reggaeton
+99, Riley Wright_78, 22, 177, Increase Endurance, Lactose, 18, EDM
+100, Avery Lee_79, 23, 173, Tone Muscles, , 7, Pop
+101, Jordan Hall_80, 40, 161, Increase Endurance, Gluten, 2, Jazz
+102, Morgan Lopez, 55, 159, Increase Endurance, Soy, 6, Country
+103, Jamie Scott, 31, 171, Gain Weight, Peanuts, 3, Pop
+104, Morgan Wright, 33, 152, Lower Blood Pressure, Eggs, 29, Classical
+105, Morgan Young, 41, 155, Increase Endurance, Eggs, 23, Jazz
+106, Jordan Lopez, 45, 197, Lose Weight, Dairy, 12, EDM
+107, Casey Young, 41, 140, Increase Endurance, Gluten, 4, Country
+108, Dylan Walker, 19, 133, Build Muscle, Lactose, 21, Hip Hop
+109, Jordan Hall, 36, 141, Gain Weight, Shellfish, 27, Hip Hop
+110, Alex Hall, 35, 196, Build Muscle, Shellfish, 4, Country
+111, Dylan Hall, 34, 141, Tone Muscles, Soy, 21, Country
+112, Dylan Wright, 27, 196, Gain Weight, Soy, 17, Hip Hop
+113, Riley Hall, 40, 203, Stay Fit, Soy, 17, Jazz
+114, Morgan Wright, 23, 200, Build Muscle, Eggs, 6, R&B
+115, Taylor Wright, 51, 135, Build Muscle, Dairy, 10, Rock
+116, Avery Young, 29, 192, Gain Weight, Lactose, 10, Rock
+117, Taylor Brown, 20, 163, Tone Muscles, Gluten, 13, Jazz
+118, Jamie Walker, 29, 135, Gain Weight, Soy, 7, R&B
+119, Morgan Lopez, 21, 183, Increase Endurance, Soy, 29, Rock
+120, Taylor Lopez, 49, 138, Lower Blood Pressure, Dairy, 7, Rock
+121, Alex King, 39, 187, Tone Muscles, Soy, 15, Country
+122, Dylan Walker, 21, 177, Stay Fit, Eggs, 3, R&B
+123, Avery Young, 18, 154, Gain Weight, Peanuts, 9, Hip Hop
+124, Taylor Scott, 24, 173, Lower Blood Pressure, Peanuts, 1, Rock
+125, Morgan Hall, 25, 209, Lower Blood Pressure, Lactose, 11, Indie
+126, Jordan Young, 21, 224, Gain Weight, Soy, 25, EDM
+127, Jordan Green, 29, 160, Build Muscle, Shellfish, 1, R&B
+128, Taylor Scott, 31, 208, Build Muscle, Lactose, 1, Rock
+129, Alex Green, 40, 154, Build Muscle, Dairy, 6, Reggaeton
+130, Morgan Young, 49, 229, Lower Blood Pressure, Eggs, 3, Hip Hop
+131, Jordan King, 48, 193, Tone Muscles, , 1, Indie
+132, Riley Walker, 21, 201, Stay Fit, , 27, Hip Hop
+133, Peyton Lopez, 30, 205, Build Muscle, Peanuts, 12, Indie
+134, Morgan Walker, 54, 171, Increase Endurance, Eggs, 4, R&B
+135, Alex Brown, 51, 192, Tone Muscles, , 21, Rock
+136, Morgan Green, 45, 183, Lose Weight, Dairy, 18, EDM
+137, Taylor Scott, 26, 189, Lose Weight, , 3, Hip Hop
+138, Alex Lee, 25, 198, Stay Fit, Gluten, 7, R&B
+139, Jamie Hall, 38, 216, Lower Blood Pressure, Lactose, 7, Pop
+140, Jamie Walker, 24, 219, Increase Endurance, Lactose, 25, Reggaeton
+141, Casey Scott, 49, 183, Gain Weight, Lactose, 7, Rock
+142, Dylan Wright, 33, 202, Lower Blood Pressure, Lactose, 23, Indie
+143, Jamie Brown, 25, 166, Tone Muscles, Shellfish, 5, R&B
+144, Casey Scott, 42, 191, Build Muscle, , 25, EDM
+145, Avery Green, 38, 139, Gain Weight, Lactose, 2, Indie
+146, Alex Brown, 21, 214, Build Muscle, Dairy, 6, Pop
+147, Morgan Young, 41, 228, Lower Blood Pressure, Lactose, 3, EDM
+148, Alex Green, 23, 179, Lose Weight, , 29, Hip Hop
+149, Riley Young, 51, 225, Stay Fit, Gluten, 1, R&B
+150, Dylan Hall, 47, 171, Gain Weight, Shellfish, 22, Country
+151, Jordan Hall, 42, 142, Increase Endurance, Gluten, 17, EDM
+
+
