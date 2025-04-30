@@ -96,7 +96,7 @@ def logout():
     app.storage.user.pop('username')
     ui.label("You are now logged out.")
     ui.link("Back to homepage", '/')
-    #ui.button('Register!', on_click=lambda: update_weight())
+    #ui.button('Register!', on_click=lambda: update_weight())#
 
 
 #def change_goal():
