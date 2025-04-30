@@ -15,12 +15,12 @@ def main():
     #cur.execute("DELETE FROM students")
     #cur.execute("DELETE FROM enroll")
 
-    with open("findGym.csv.csv", 'r') as file:
+    with open("findGym.csv", 'r') as file:
          with cur.copy(f"COPY findGym FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
-    with open("gyms.csv.csv", 'r') as file:
+    with open("gyms.csv", 'r') as file:
         with cur.copy(f"COPY gyms FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
@@ -30,12 +30,12 @@ def main():
             copy.write(file.read())
     conn.commit()
 
-    with open("Ingredients.csv.csv", 'r') as file:
+    with open("Ingredients.csv", 'r') as file:
         with cur.copy(f"COPY Ingredients FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
-    with open("makeRecipe.csv.csv", 'r') as file:
+    with open("makeRecipe.csv", 'r') as file:
         with cur.copy(f"COPY makeRecipe FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
@@ -45,12 +45,12 @@ def main():
             copy.write(file.read())
     conn.commit()
 
-    with open("pt.csv.csv", 'r') as file:
+    with open("pt.csv", 'r') as file:
         with cur.copy(f"COPY pt FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
-    with open("recipes.csv.csv", 'r') as file:
+    with open("recipes.csv", 'r') as file:
         with cur.copy(f"COPY recipes FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
@@ -60,12 +60,12 @@ def main():
             copy.write(file.read())
     conn.commit()
 
-    with open("ReviewPT.csv.csv", 'r') as file:
+    with open("ReviewPT.csv", 'r') as file:
         with cur.copy(f"COPY ReviewPT FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
-    with open("reviewRecipes.csv.csv", 'r') as file:
+    with open("reviewRecipes.csv", 'r') as file:
         with cur.copy(f"COPY reviewRecipes FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
@@ -75,7 +75,7 @@ def main():
             copy.write(file.read())
     conn.commit()
 
-    with open("WorkInGym", 'r') as file:
+    with open("WorkInGym.csv", 'r') as file:
         with cur.copy(f"COPY WorkInGym FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
