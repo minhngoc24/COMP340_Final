@@ -99,7 +99,6 @@ def logout():
     #ui.button('Register!', on_click=lambda: update_weight())
 
 
-
 #def change_goal():
 
 
