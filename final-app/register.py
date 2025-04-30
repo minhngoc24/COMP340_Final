@@ -31,11 +31,19 @@ def homepage():
     if username is not None:
         ui.label("You are logged in as user: " + username)
 
+
         def update_weight():
+
+            weight = get_weight_for_user(username)
             user_box = ui.input('User_id: ')
             newweight_box = ui.input('New Weight: ')
+
             cur.execute('UPDATE USERS SET weight = newweight_box where user_id = user_box')
+
+
         ui.button('Change Weight', on_click=update_weight)
+
+
 
     else:
         ui.label("You are not logged in.")
@@ -77,6 +85,10 @@ def get_password_for_user(user_id):
     row = cur.fetchone()
     return str(row['age'])  # return as a string to simulate a password
 
+def get_weight_for_user(user_id):
+    cur.execute("SELECT weight from USERS where user_id=%s", [user_id])
+    row = cur.fetchone()
+    return str(row['weight'])  # return as a string to simulate a password
 
 @ui.page('/logout')
 def logout():

@@ -22,8 +22,7 @@ def main():
     conn.commit()
     cur.close()
     conn.close()
-=======
->>>>>>> d7f5a22f84cbb052e94c0ccd36d2d512ac632006
+
 
 
 main()
