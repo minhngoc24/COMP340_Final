@@ -31,15 +31,28 @@ def homepage():
     if username is not None:
         ui.label("You are logged in as user: " + username)
 
+        cur.execute('SELECT weight FROM USERS WHERE user_id = %s', (username,))
+        weight = cur.fetchone()['weight']
+        current_weight_label = ui.label(f'Current weight is: {weight}')
+
+        user_box = ui.input('User ID:')
+        newweight_box = ui.input('New Weight:')
+        result = ui.label('')
+
         def update_weight():
-            user_box = ui.input('User_id: ')
-            newweight_box = ui.input('New Weight: ')
-            cur.execute('UPDATE USERS SET weight = newweight_box where user_id = user_box')
+            if user_box.value.isdigit() and newweight_box.value:
+                cur.execute('UPDATE USERS SET weight = %s WHERE user_id = %s',
+                            (newweight_box.value, user_box.value))
+                conn.commit()
+                current_weight_label.text = f"Current weight is: {newweight_box.value}"
+                result.text = f"New weight is: {newweight_box.value}"
+            else:
+                result.text = 'Please enter a valid user ID and weight.'
+
         ui.button('Change Weight', on_click=update_weight)
 
     else:
         ui.label("You are not logged in.")
-
 
 
     ui.link("Login", '/login')
