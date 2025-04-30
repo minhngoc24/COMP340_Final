@@ -1,0 +1,153 @@
+Rid,Description,meal_name,calories,prep_time
+1, A healthy breakfast option, Oatmeal, 150, 10
+2, Quick and filling lunch, Grilled Chicken Salad, 300, 15
+3, Delicious and light dinner, Vegetable Stir Fry, 200, 20
+4, Refreshing smoothie, Berry Smoothie, 180, 5
+5, Energy-boosting snack, Peanut Butter Banana Toast, 250, 8
+6, Energy-boosting snack, Lentil Soup, 197, 17
+7, Delicious and light dinner, Quinoa Bowl, 284, 27
+8, Energy-boosting snack, Sweet Potato Hash, 270, 6
+9, Energy-boosting snack, Lentil Soup, 200, 23
+10, A healthy breakfast option, Zucchini Noodles, 286, 14
+11, Simple and tasty, Sweet Potato Hash, 398, 19
+12, Quick and filling lunch, Peanut Butter Banana Toast, 287, 29
+13, Energy-boosting snack, Sweet Potato Hash, 380, 18
+14, Energy-boosting snack, Spinach Omelette, 438, 19
+15, Low-carb dinner, Spinach Omelette, 376, 13
+16, Vegan-friendly dish, Sweet Potato Hash, 351, 6
+17, Quick and filling lunch, Quinoa Bowl, 156, 17
+18, Low-carb dinner, Protein Pancakes, 187, 28
+19, Energy-boosting snack, Avocado Toast, 292, 13
+20, Keto-compatible recipe, Protein Pancakes, 345, 19
+21, Vegan-friendly dish, Tofu Scramble, 290, 7
+22, Energy-boosting snack, Baked Salmon, 300, 7
+23, Refreshing smoothie, Avocado Toast, 225, 27
+24, Keto-compatible recipe, Protein Pancakes, 210, 27
+25, Vegan-friendly dish, Greek Yogurt Parfait, 257, 15
+26, Vegan-friendly dish, Avocado Toast, 480, 17
+27, A healthy breakfast option, Avocado Toast, 348, 11
+28, Simple and tasty, Sweet Potato Hash, 491, 29
+29, Simple and tasty, Zucchini Noodles, 331, 14
+30, A healthy breakfast option, Chicken Tacos, 229, 7
+31, Vegan-friendly dish, Turkey Wrap, 465, 19
+32, Keto-compatible recipe, Vegetable Stir Fry, 291, 11
+33, High-protein meal, Vegetable Stir Fry, 439, 27
+34, Energy-boosting snack, Sweet Potato Hash, 342, 7
+35, High-protein meal, Turkey Wrap, 191, 8
+36, Simple and tasty, Egg Muffins, 213, 15
+37, Vegan-friendly dish, Baked Salmon, 388, 6
+38, Low-carb dinner, Spinach Omelette, 307, 5
+39, Simple and tasty, Lentil Soup, 283, 12
+40, Refreshing smoothie, Oatmeal, 207, 26
+41, A healthy breakfast option, Egg Muffins, 466, 16
+42, High-protein meal, Tofu Scramble, 262, 24
+43, Energy-boosting snack, Berry Smoothie, 475, 6
+44, Delicious and light dinner, Peanut Butter Banana Toast, 282, 22
+45, Energy-boosting snack, Lentil Soup, 313, 17
+46, Keto-compatible recipe, Tofu Scramble, 434, 23
+47, Quick and filling lunch, Greek Yogurt Parfait, 184, 17
+48, Refreshing smoothie, Chia Pudding, 258, 19
+49, High-protein meal, Quinoa Bowl, 173, 14
+50, High-protein meal, Sweet Potato Hash, 333, 14
+51, A healthy breakfast option, Protein Pancakes, 371, 5
+52, A healthy breakfast option, Oatmeal, 478, 29
+53, High-protein meal, Chia Pudding, 198, 25
+54, Delicious and light dinner, Peanut Butter Banana Toast, 282, 8
+55, Delicious and light dinner, Avocado Toast, 397, 21
+56, A healthy breakfast option, Fruit Bowl, 241, 20
+57, Refreshing smoothie, Baked Salmon, 373, 14
+58, Keto-compatible recipe, Veggie Wrap, 341, 11
+59, A healthy breakfast option, Fruit Bowl, 429, 17
+60, Delicious and light dinner, Avocado Toast, 191, 10
+61, Simple and tasty, Protein Pancakes, 370, 13
+62, Energy-boosting snack, Greek Yogurt Parfait, 270, 9
+63, Quick and filling lunch, Rice Bowl, 265, 24
+64, Low-carb dinner, Oatmeal, 257, 11
+65, Vegan-friendly dish, Peanut Butter Banana Toast, 473, 27
+66, Keto-compatible recipe, Chia Pudding, 453, 17
+67, Simple and tasty, Rice Bowl, 255, 16
+68, Energy-boosting snack, Chia Pudding, 238, 25
+69, Quick and filling lunch, Zucchini Noodles, 400, 26
+70, Low-carb dinner, Rice Bowl, 349, 22
+71, Low-carb dinner, Rice Bowl, 426, 22
+72, Delicious and light dinner, Grilled Chicken Salad, 273, 24
+73, Simple and tasty, Tofu Scramble, 257, 14
+74, Energy-boosting snack, Chia Pudding, 264, 8
+75, High-protein meal, Turkey Wrap, 399, 13
+76, High-protein meal, Veggie Wrap, 455, 29
+77, Keto-compatible recipe, Chicken Tacos, 227, 19
+78, High-protein meal, Avocado Toast, 216, 21
+79, Energy-boosting snack, Lentil Soup, 430, 22
+80, Quick and filling lunch, Zucchini Noodles, 155, 25
+81, Low-carb dinner, Baked Salmon, 179, 29
+82, Low-carb dinner, Chia Pudding, 237, 27
+83, Simple and tasty, Lentil Soup, 221, 14
+84, High-protein meal, Zucchini Noodles, 427, 16
+85, Keto-compatible recipe, Lentil Soup, 325, 9
+86, Delicious and light dinner, Avocado Toast, 329, 18
+87, Refreshing smoothie, Turkey Wrap, 302, 28
+88, Quick and filling lunch, Chia Pudding, 372, 26
+89, Energy-boosting snack, Greek Yogurt Parfait, 478, 15
+90, Keto-compatible recipe, Fruit Bowl, 320, 27
+91, Low-carb dinner, Greek Yogurt Parfait, 214, 10
+92, Simple and tasty, Greek Yogurt Parfait, 487, 29
+93, A healthy breakfast option, Tofu Scramble, 344, 23
+94, Quick and filling lunch, Greek Yogurt Parfait, 165, 17
+95, A healthy breakfast option, Vegetable Stir Fry, 321, 17
+96, Energy-boosting snack, Rice Bowl, 276, 20
+97, Low-carb dinner, Greek Yogurt Parfait, 373, 18
+98, High-protein meal, Spinach Omelette, 369, 6
+99, Low-carb dinner, Veggie Wrap, 185, 7
+100, Simple and tasty, Oatmeal, 492, 19
+101, High-protein meal, Quinoa Bowl, 177, 7
+102, A healthy breakfast option, Lentil Soup, 443, 14
+103, Refreshing smoothie, Grilled Chicken Salad, 418, 11
+104, A healthy breakfast option, Chia Pudding, 331, 22
+105, High-protein meal, Egg Muffins, 330, 29
+106, Simple and tasty, Turkey Wrap, 249, 11
+107, Simple and tasty, Fruit Bowl, 248, 23
+108, Quick and filling lunch, Oatmeal, 276, 19
+109, High-protein meal, Grilled Chicken Salad, 258, 26
+110, A healthy breakfast option, Egg Muffins, 224, 21
+111, Low-carb dinner, Fruit Bowl, 468, 13
+112, Simple and tasty, Oatmeal, 224, 14
+113, Simple and tasty, Fruit Bowl, 425, 28
+114, Quick and filling lunch, Lentil Soup, 388, 25
+115, A healthy breakfast option, Oatmeal, 388, 27
+116, Keto-compatible recipe, Avocado Toast, 438, 8
+117, High-protein meal, Turkey Wrap, 413, 20
+118, Quick and filling lunch, Quinoa Bowl, 368, 8
+119, Refreshing smoothie, Egg Muffins, 290, 12
+120, Delicious and light dinner, Grilled Chicken Salad, 191, 27
+121, Quick and filling lunch, Egg Muffins, 203, 10
+122, Energy-boosting snack, Fruit Bowl, 344, 20
+123, Refreshing smoothie, Egg Muffins, 372, 24
+124, Low-carb dinner, Fruit Bowl, 386, 22
+125, Energy-boosting snack, Avocado Toast, 243, 23
+126, Energy-boosting snack, Spinach Omelette, 271, 24
+127, Refreshing smoothie, Quinoa Bowl, 277, 27
+128, High-protein meal, Lentil Soup, 440, 18
+129, Low-carb dinner, Fruit Bowl, 307, 15
+130, Vegan-friendly dish, Chia Pudding, 214, 24
+131, High-protein meal, Turkey Wrap, 365, 17
+132, Refreshing smoothie, Turkey Wrap, 326, 7
+133, Quick and filling lunch, Oatmeal, 403, 11
+134, Simple and tasty, Fruit Bowl, 442, 6
+135, Energy-boosting snack, Egg Muffins, 252, 26
+136, Keto-compatible recipe, Turkey Wrap, 305, 24
+137, Energy-boosting snack, Oatmeal, 353, 8
+138, Energy-boosting snack, Chia Pudding, 348, 6
+139, High-protein meal, Avocado Toast, 499, 22
+140, Vegan-friendly dish, Avocado Toast, 210, 6
+141, Vegan-friendly dish, Egg Muffins, 431, 17
+142, Delicious and light dinner, Lentil Soup, 437, 13
+143, Vegan-friendly dish, Chia Pudding, 439, 22
+144, Refreshing smoothie, Oatmeal, 307, 16
+145, Energy-boosting snack, Quinoa Bowl, 316, 13
+146, High-protein meal, Fruit Bowl, 474, 8
+147, Quick and filling lunch, Turkey Wrap, 379, 12
+148, Delicious and light dinner, Quinoa Bowl, 490, 8
+149, Simple and tasty, Spinach Omelette, 473, 27
+150, Delicious and light dinner, Grilled Chicken Salad, 313, 16
+
+
