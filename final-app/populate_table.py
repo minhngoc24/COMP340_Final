@@ -16,67 +16,67 @@ def main():
     #cur.execute("DELETE FROM enroll")
 
     with open("findGym.csv.csv", 'r') as file:
-         with cur.copy(f"COPY courses FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+         with cur.copy(f"COPY findGym FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("gyms.csv.csv", 'r') as file:
-        with cur.copy(f"COPY students FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY gyms FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("hasIngredients.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY hasIngredients FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("Ingredients.csv.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY Ingredients FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("makeRecipe.csv.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY makeRecipe FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("Match.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY Match FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("pt.csv.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY pt FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("recipes.csv.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY recipes FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("ReviewGym.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY ReviewGym FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("ReviewPT.csv.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY ReviewPT FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("reviewRecipes.csv.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY reviewRecipes FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("users.csv", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY users FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
     with open("WorkInGym", 'r') as file:
-        with cur.copy(f"COPY enroll FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
+        with cur.copy(f"COPY WorkInGym FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
 
