@@ -15,7 +15,7 @@ def main():
     #cur.execute("DELETE FROM students")
     #cur.execute("DELETE FROM enroll")
 
-<<<<<<< HEAD
+
     with open("findGym.csv", 'r') as file:
          with cur.copy(f"COPY indGym FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
