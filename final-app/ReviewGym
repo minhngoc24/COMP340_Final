@@ -1,0 +1,87 @@
+User_id, Address, Rating
+1, '123 Fitness Ave, New York, NY', 5
+2, '456 Muscle Rd, Los Angeles, CA', 4
+3, '789 Cardio Blvd, Chicago, IL', 3
+4, '101 Yoga St, Austin, TX', 4
+5, '202 Lift Ln, Miami, FL', 5
+6, '303 Spin Cir, Denver, CO', 3
+7, '404 Strength Dr, Boston, MA', 4
+8, '505 HIIT Pl, Seattle, WA', 5
+9, '606 Wellness Ave, Portland, OR', 2
+10, '707 Balance Blvd, San Diego, CA', 4
+11, '329 Spin Cir, New York, NY', 1
+12, '199 Fitness Ave, Seattle, WA', 2
+13, '346 Strength Dr, New York, NY', 5
+14, '697 Yoga St, Boston, MA', 3
+15, '543 Spin Cir, Boston, MA', 1
+16, '975 HIIT Pl, Seattle, WA', 2
+17, '356 Fitness Ave, Boston, MA', 2
+18, '548 Balance Blvd, Chicago, IL', 2
+19, '365 Fitness Ave, Miami, FL', 3
+20, '296 Fitness Ave, Chicago, IL', 4
+21, '925 Yoga St, Boston, MA', 2
+22, '665 Balance Blvd, Austin, TX', 5
+23, '218 Strength Dr, San Diego, CA', 3
+24, '149 Strength Dr, Portland, OR', 2
+25, '573 Balance Blvd, Austin, TX', 3
+26, '842 Cardio Blvd, Portland, OR', 1
+27, '286 Strength Dr, Los Angeles, CA', 2
+28, '979 HIIT Pl, Miami, FL', 2
+29, '878 Cardio Blvd, Portland, OR', 3
+30, '415 Yoga St, Seattle, WA', 1
+31, '901 Wellness Ave, San Diego, CA', 2
+32, '276 Balance Blvd, Seattle, WA', 3
+33, '517 Muscle Rd, San Diego, CA', 3
+34, '586 Cardio Blvd, Boston, MA', 4
+35, '852 Lift Ln, Miami, FL', 1
+36, '871 Fitness Ave, San Diego, CA', 4
+37, '359 Fitness Ave, Boston, MA', 1
+38, '476 Wellness Ave, Seattle, WA', 1
+39, '829 Balance Blvd, New York, NY', 4
+40, '570 Spin Cir, Miami, FL', 3
+41, '651 Balance Blvd, New York, NY', 1
+42, '158 Muscle Rd, Miami, FL', 2
+43, '656 HIIT Pl, Los Angeles, CA', 5
+44, '698 HIIT Pl, Denver, CO', 2
+45, '390 Strength Dr, Portland, OR', 1
+46, '542 Lift Ln, Seattle, WA', 2
+47, '942 Spin Cir, Chicago, IL', 5
+48, '831 Spin Cir, San Diego, CA', 4
+49, '635 Muscle Rd, San Diego, CA', 3
+50, '343 Strength Dr, Denver, CO', 5
+51, '371 Fitness Ave, Chicago, IL', 3
+52, '862 Cardio Blvd, Portland, OR', 2
+53, '824 Wellness Ave, New York, NY', 1
+54, '355 Wellness Ave, New York, NY', 2
+55, '334 Balance Blvd, San Diego, CA', 5
+56, '750 Fitness Ave, Miami, FL', 3
+57, '333 Lift Ln, Seattle, WA', 3
+58, '829 Strength Dr, Miami, FL', 5
+59, '564 Muscle Rd, Seattle, WA', 5
+60, '976 Balance Blvd, Austin, TX', 5
+61, '825 Wellness Ave, Denver, CO', 3
+62, '907 Wellness Ave, Denver, CO', 5
+63, '462 Cardio Blvd, San Diego, CA', 1
+64, '477 Muscle Rd, Miami, FL', 5
+65, '322 Cardio Blvd, Denver, CO', 4
+66, '402 Balance Blvd, Chicago, IL', 1
+67, '215 Wellness Ave, San Diego, CA', 1
+68, '908 Wellness Ave, Chicago, IL', 5
+69, '400 Lift Ln, Seattle, WA', 5
+70, '751 Spin Cir, Austin, TX', 2
+71, '841 Balance Blvd, San Diego, CA', 2
+72, '978 HIIT Pl, Boston, MA', 1
+73, '650 Muscle Rd, Denver, CO', 2
+74, '190 Lift Ln, San Diego, CA', 1
+75, '103 HIIT Pl, Austin, TX', 4
+76, '441 Yoga St, Seattle, WA', 4
+77, '527 Balance Blvd, Portland, OR', 3
+78, '379 Cardio Blvd, Boston, MA', 2
+79, '916 HIIT Pl, Boston, MA', 1
+80, '759 Cardio Blvd, Portland, OR', 5
+81, '720 Lift Ln, New York, NY', 2
+82, '674 Muscle Rd, San Diego, CA', 3
+83, '520 Balance Blvd, Los Angeles, CA', 4
+84, '399 HIIT Pl, San Diego, CA', 2
+85, '477 Wellness Ave, Seattle, WA', 2
+86, '712 HIIT Pl, New York, NY', 3
