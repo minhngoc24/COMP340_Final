@@ -6,7 +6,7 @@ from dbinfo import *
 
 def main():
     # Connect to an existing database
-    conn = psycopg.connect(f"host=dbclass.rhodescs.org dbname=practice user={DBUSER} password={DBPASS}")
+    conn = psycopg.connect(f"host=dbclass.rhodescs.org dbname=flights user={DBUSER} password={DBPASS}")
 
     # Open a cursor to perform database operations
     cur = conn.cursor(row_factory=dict_row)
@@ -15,71 +15,15 @@ def main():
     #cur.execute("DELETE FROM students")
     #cur.execute("DELETE FROM enroll")
 
+<<<<<<< HEAD
     with open("findGym.csv", 'r') as file:
          with cur.copy(f"COPY indGym FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
             copy.write(file.read())
     conn.commit()
     cur.close()
     conn.close()
+=======
+>>>>>>> d7f5a22f84cbb052e94c0ccd36d2d512ac632006
 
-    with open("gyms.csv", 'r') as file:
-        with cur.copy(f"COPY gyms FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("hasIngredients.csv", 'r') as file:
-        with cur.copy(f"COPY hasIngredients FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("Ingredients.csv", 'r') as file:
-        with cur.copy(f"COPY Ingredients FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("makeRecipe.csv", 'r') as file:
-        with cur.copy(f"COPY makeRecipe FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("Match.csv", 'r') as file:
-        with cur.copy(f"COPY Match FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("pt.csv", 'r') as file:
-        with cur.copy(f"COPY pt FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("recipes.csv", 'r') as file:
-        with cur.copy(f"COPY recipes FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("ReviewGym.csv", 'r') as file:
-        with cur.copy(f"COPY ReviewGym FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("ReviewPT.csv", 'r') as file:
-        with cur.copy(f"COPY ReviewPT FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("reviewRecipes.csv", 'r') as file:
-        with cur.copy(f"COPY reviewRecipes FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("users.csv", 'r') as file:
-        with cur.copy(f"COPY users FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
-
-    with open("WorkInGym.csv", 'r') as file:
-        with cur.copy(f"COPY WorkInGym FROM STDIN WITH (FORMAT CSV, HEADER true)") as copy:
-            copy.write(file.read())
-    conn.commit()
 
 main()
