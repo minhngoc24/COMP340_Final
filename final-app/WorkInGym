@@ -1,51 +1,51 @@
 Pt_id, Address
-8, 123 Fitness Ave, New York, NY
-4, 456 Muscle Rd, Los Angeles, CA
-3, 789 Cardio Blvd, Chicago, IL
-2, 101 Yoga St, Austin, TX
-6, 202 Lift Ln, Miami, FL
-9, 303 Power St, San Francisco, CA
-5, 404 Fit Rd, Seattle, WA
-10, 505 Strength Blvd, Boston, MA
-7, 606 Health Ln, Portland, OR
-1, 707 Flex Ave, San Diego, CA
-32, 474 Cardio Blvd, Los Angeles, CA
-22, 333 Spin Cir, Miami, FL
-19, 778 Lift Ln, Denver, CO
-27, 717 Lift Ln, New York, NY
-26, 308 Cardio Blvd, San Diego, CA
-44, 141 Balance Blvd, Miami, FL
-42, 309 Wellness Ave, Los Angeles, CA
-35, 572 Lift Ln, Chicago, IL
-30, 842 Spin Cir, Portland, OR
-32, 750 Spin Cir, Denver, CO
-40, 960 Strength Dr, Boston, MA
-14, 803 HIIT Pl, Boston, MA
-33, 361 Balance Blvd, San Diego, CA
-18, 542 Cardio Blvd, Austin, TX
-21, 774 Cardio Blvd, Los Angeles, CA
-33, 350 HIIT Pl, Miami, FL
-17, 475 Lift Ln, Denver, CO
-37, 451 Balance Blvd, Miami, FL
-13, 495 Lift Ln, New York, NY
-41, 713 HIIT Pl, San Diego, CA
-9, 901 Muscle Rd, Seattle, WA
-5, 484 HIIT Pl, Boston, MA
-7, 608 Muscle Rd, Austin, TX
-12, 463 Wellness Ave, Chicago, IL
-4, 466 Wellness Ave, Boston, MA
-45, 218 Balance Blvd, San Diego, CA
-41, 375 Balance Blvd, New York, NY
-9, 453 Muscle Rd, San Diego, CA
-49, 333 Spin Cir, Boston, MA
-20, 105 Strength Dr, Los Angeles, CA
-8, 500 Strength Dr, Los Angeles, CA
-5, 163 Muscle Rd, Miami, FL
-25, 452 Fitness Ave, Austin, TX
-39, 363 Cardio Blvd, Los Angeles, CA
-16, 838 Spin Cir, Chicago, IL
-29, 685 Strength Dr, Los Angeles, CA
-25, 784 Wellness Ave, Austin, TX
-36, 518 Fitness Ave, Los Angeles, CA
-40, 755 Muscle Rd, Miami, FL
-20, 680 Balance Blvd, New York, NY
+8, 123 Fitness Ave
+4, 456 Muscle Rd
+3, 789 Cardio Blvd
+2, 101 Yoga St
+6, 202 Lift Ln
+9, 303 Power St
+5, 404 Fit Rd
+10, 505 Strength Blvd
+7, 606 Health Ln
+1, 707 Flex Ave
+32, 474 Cardio Blvd
+22, 333 Spin Cir
+19, 778 Lift Ln
+27, 717 Lift Ln
+26, 308 Cardio Blvd
+44, 141 Balance Blvd
+42, 309 Wellness Ave
+35, 572 Lift Ln
+30, 842 Spin Cir
+32, 750 Spin Cir
+40, 960 Strength Dr
+14, 803 HIIT Pl
+33, 361 Balance Blvd
+18, 542 Cardio Blvd
+21, 774 Cardio Blvd
+33, 350 HIIT Pl
+17, 475 Lift Ln
+37, 451 Balance Blvd
+13, 495 Lift Ln
+41, 713 HIIT Pl
+9, 901 Muscle Rd
+5, 484 HIIT Pl
+7, 608 Muscle Rd
+12, 463 Wellness Ave
+4, 466 Wellness Ave
+45, 218 Balance Blvd
+41, 375 Balance Blvd
+9, 453 Muscle Rd
+49, 333 Spin Cir
+20, 105 Strength Dr
+8, 500 Strength Dr
+5, 163 Muscle Rd
+25, 452 Fitness Ave
+39, 363 Cardio Blvd
+16, 838 Spin Cir
+29, 685 Strength Dr
+25, 784 Wellness Ave
+36, 518 Fitness Ave
+40, 755 Muscle Rd
+20, 680 Balance Blvd
