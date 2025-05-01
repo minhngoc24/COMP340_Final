@@ -67,7 +67,6 @@ def homepage():
             def hide_my_table():
                 recipe_card.set_visibility(False)
 
-            cur.execute("SELECT * FROM MakeRecipes natural join Recipes where MakeRecipes.user_id = %s" , [username])
             rows = cur.fetchall()
             with ui.card() as recipe_card:
                 ui.label("My Recipes")
