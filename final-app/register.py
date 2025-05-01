@@ -42,6 +42,28 @@ def homepage():
         result = ui.label('')
         goal_result = ui.label('')
 
+
+        def get_recipes():
+            def hide_table():
+                recipe_card.set_visibility(False)
+
+            cur.execute("SELECT * FROM Recipes")
+            rows = cur.fetchall()
+            with ui.card() as recipe_card:
+                ui.label("Recipes")
+                cols = [{'name': 'rid', 'field': 'rid', 'label': "Recipe ID"},
+                        {'name': 'description', 'field': 'description', 'label': "Desc"},
+                        {'name': 'meal_name', 'field': 'meal_name', 'label': "Meal Name"},
+                        {'name': 'calories', 'field': 'calories', 'label': "Calories"},
+                        {'name': 'prep_time', 'field': 'prep_time', 'label': "Time"}]
+                recipe_table = ui.table(columns=cols, rows=[])
+                ui.button('Hide Table', on_click=hide_table)
+
+            recipe_table.add_rows(rows)
+            recipe_table.update()
+            recipe_card.set_visibility(True)
+
+
         def visible_change_weight():
             weight_card.set_visibility(True)
 
@@ -55,6 +77,8 @@ def homepage():
         ui.button('Change Weight', on_click= visible_change_weight)
         ui.button('Change Playlist', on_click=visible_change_playlist)
         ui.button('Change Goal', on_click=visible_change_goal)
+        ui.button('Search Recipes', on_click=get_recipes)
+
 
 
 
