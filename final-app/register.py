@@ -31,44 +31,60 @@ def homepage():
     if username is not None:
         ui.label("You are logged in as user: " + username)
 
+        cur.execute('SELECT weight, playlist_genre FROM USERS WHERE user_id = %s', (username,))
+        row = cur.fetchone()
+        weight = row['weight']
+        playlist_genre = row['playlist_genre']
 
-        cur.execute('SELECT weight FROM USERS WHERE user_id = %s', (username,))
-        weight = cur.fetchone()['weight']
-        current_weight_label = ui.label(f'Current weight is: {weight}')
 
+        playlist_result = ui.label('')
+        result = ui.label('')
         def visible_change_weight():
             weight_card.set_visibility(True)
 
-        ui.button('Change Weight', on_click= visible_change_weight)
+        def visible_change_playlist():
+            playlist_card.set_visibility(True)
 
-        result = ui.label('')
+        ui.button('Change Weight', on_click= visible_change_weight)
+        ui.button('Change Playlist', on_click=visible_change_playlist)
+
+
 
         def update_weight():
-            if user_box.value.isdigit() and newweight_box.value:
+            if user_box_weight.value.isdigit() and newweight_box.value:
                 cur.execute('UPDATE USERS SET weight = %s WHERE user_id = %s',
-                            (newweight_box.value, user_box.value))
+                            (newweight_box.value, user_box_weight.value))
                 conn.commit()
-                current_weight_label.text = f"Current weight is: {newweight_box.value}"
+                print(f"Current weight is: {newweight_box.value}")
                 result.text = f"New weight is: {newweight_box.value}"
                 weight_card.set_visibility(False)
             else:
                 result.text = 'Please enter a valid user ID and weight.'
 
         with ui.card() as weight_card:
-            user_box = ui.input('User ID:')
+            user_box_weight = ui.input('User ID:')
             newweight_box = ui.input('New Weight:')
             ui.button('Confirm weight', on_click=update_weight)
         weight_card.set_visibility(False)
-        def change_weight():
 
-            weight = get_weight_for_user(username)
-            user_box = ui.input('User_id: ')
-            newweight_box = ui.input('New Weight: ')
+        def update_playlist():
+            if user_box_playlist.value.isdigit() and newPlaylist_box.value:
+                cur.execute('UPDATE USERS SET playlist_genre = %s WHERE user_id = %s',
+                            (newPlaylist_box.value, user_box_playlist.value))
+                conn.commit()
+                print(f"Current playlist is: {newPlaylist_box.value}")
+                playlist_result.text = f"New playlist is: {newPlaylist_box.value}"
+                playlist_card.set_visibility(False)
 
-            cur.execute('UPDATE USERS SET weight = newweight_box where user_id = user_box')
+            else:
+                playlist_result.text = 'Please enter a valid playlist'
 
 
-
+        with ui.card() as playlist_card:
+            user_box_playlist = ui.input('User ID:')
+            newPlaylist_box = ui.input('New Playlist:')
+            ui.button('Confirm playlist', on_click=update_playlist)
+        playlist_card.set_visibility(False)
 
 
 
