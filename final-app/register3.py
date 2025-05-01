@@ -23,9 +23,9 @@ def homepage():
         }
 
         .header {
-            background: linear-gradient(to bottom right, #c8b6ff, #c1d3ff);
+            background: linear-gradient(to bottom right, #a7bed3, #c1d3ff);
             backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            border: #FAFABE;
             border-radius: 12px;
             padding: 1rem;
             margin: 1rem auto;
