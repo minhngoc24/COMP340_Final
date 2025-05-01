@@ -98,11 +98,11 @@ def homepage():
         def update_goal():
             if user_box_goal.value == username and newGoal_box.value:
                 cur.execute('UPDATE USERS SET fitness_goal = %s WHERE user_id = %s',
-                            (newGoal_box.value, user_box_playlist.value))
+                            (newGoal_box.value, user_box_goal.value))
                 conn.commit()
                 print(f"Current goal is: {newGoal_box.value}")
-                playlist_result.text = f"New goal is: {newGoal_box.value}"
-                playlist_card.set_visibility(False)
+                goal_result.text = f"New goal is: {newGoal_box.value}"
+                goal_card.set_visibility(False)
 
             else:
                 goal_result.text = 'Please enter a valid playlist'
@@ -111,7 +111,7 @@ def homepage():
             user_box_goal = ui.input('User ID:')
             newGoal_box = ui.input('New Goal:')
             ui.button('Confirm goal', on_click=update_goal)
-        weight_card.set_visibility(False)
+        goal_card.set_visibility(False)
 
 
     else:
