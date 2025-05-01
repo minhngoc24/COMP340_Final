@@ -18,7 +18,7 @@ def homepage():
             font-family: 'Segoe UI', sans-serif;
             background: linear-gradient(to bottom right, #f99aaa, #e0c3fc);
             color: #000000;
-            font-size: 20px;
+            font-size: 40px;
             text-align: center;
         }
 
@@ -31,7 +31,8 @@ def homepage():
             margin: 1rem auto;
             width: 80%;
             max-width: 800px;
-            color: white;
+            color: black;
+            font-family: fantasy;
         }
 
         .section-title {
@@ -148,6 +149,9 @@ def homepage():
         def del_recipe_visibility():
             del_recipe_card.set_visibility(True)
 
+        def visible_add_recipe():
+            add_recipe_card.set_visibility(True)
+
         def get_my_recipes():
             def hide_my_table():
                 recipe_card.set_visibility(False)
@@ -169,15 +173,17 @@ def homepage():
                 recipe_table.update()
                 recipe_card.set_visibility(True)
 
-        ui.button('Change Weight', on_click=visible_change_weight)
-        ui.button('Change Playlist', on_click=visible_change_playlist)
-        ui.button('Change Goal', on_click=visible_change_goal)
-        ui.button('Search Recipes', on_click=get_recipes)
-        ui.button('Get my recipes', on_click=get_my_recipes)
-        ui.button('Find gyms within a radius', on_click=visible_find_gym)
-        ui.button('Find your Personal Trainer', on_click=visible_find_pt)
-        ui.button("Review Gyms", on_click=visible_review_gym)
-        ui.button('Delete Recipe', on_click=del_recipe_visibility)
+        ui.button('Change Weight', on_click=visible_change_weight, color='cyan')
+        ui.button('Change Playlist', on_click=visible_change_playlist, color='cyan')
+        ui.button('Change Goal', on_click=visible_change_goal, color='cyan')
+        ui.button('Search Recipes', on_click=get_recipes, color='cyan')
+        ui.button('Delete Recipe', on_click=del_recipe_visibility, color='cyan')
+        ui.button('Get my recipes', on_click=get_my_recipes, color='cyan')
+        ui.button('Find gyms within a radius', on_click=visible_find_gym, color='cyan')
+        ui.button('Find your Personal Trainer', on_click=visible_find_pt, color='cyan')
+        ui.button("Review Gyms", on_click=visible_review_gym, color='cyan')
+        ui.button('Add a New Recipe', on_click=visible_add_recipe, color='cyan')
+
 
         def del_recipes():
             if del_recipe_box.value:
@@ -252,10 +258,6 @@ def homepage():
 
         add_recipe_result = ui.label('')
 
-        def visible_add_recipe():
-            add_recipe_card.set_visibility(True)
-
-        ui.button('Add a New Recipe', on_click=visible_add_recipe)
 
         def confirm_add_recipe():
             try:
@@ -287,10 +289,9 @@ def homepage():
             calories_input = ui.input('Calories')
             prep_time_input = ui.input('Prep Time (minutes)')
             ui.button('Add Recipe', on_click=confirm_add_recipe)
-
+        add_recipe_card.set_visibility(False)
         def review_Gym():
             try:
-
                 addr = addr_input.value
                 ratings = ratings_input.value
 
@@ -309,8 +310,9 @@ def homepage():
             addr_input = ui.input('Address:')
             ratings_input = ui.input('Ratings:')
             ui.button('Confirm ratings', on_click=review_Gym)
+        add_reviewGym_card.set_visibility(False)
 
-        add_recipe_card.set_visibility(False)
+
 
         with ui.card() as findpt_card:
             def hide_my_table():
@@ -323,13 +325,7 @@ def homepage():
 
             def find_pts():
                 if get_user.value.isdigit():
-                    cur.execute('''
-                           SELECT p.pt_id, p.name, p.experience, p.phone, f.Address
-                           FROM match m
-                           JOIN pt p ON m.pt_id = p.pt_id
-                           JOIN WorkInGym f ON p.pt_id = f.pt_id
-                           WHERE m.user_id = %s
-                       ''', (get_user.value,))
+                    cur.execute('''SELECT p.pt_id, p.name, p.experience, p.phone, f.Address FROM match m JOIN pt p ON m.pt_id = p.pt_id JOIN WorkInGym f ON p.pt_id = f.pt_id WHERE m.user_id = %s''', (get_user.value,))
                     pt_row = cur.fetchone()
 
                     cur.execute('SELECT fitness_goal FROM users WHERE user_id = %s', (get_user.value,))
@@ -343,12 +339,7 @@ def homepage():
                             ui.label(f"️ Works at: {pt_row['address']}")
                             ui.label(f"Helping you achieve your goal: {user_row['fitness_goal']}")
 
-                            cur.execute('''
-                               SELECT r.ratings, u.name AS reviewer
-                               FROM reviewpt r
-                               JOIN users u ON r.user_id = u.user_id
-                               WHERE r.pt_id = %s
-                               ''', (pt_row['pt_id'],))
+                            cur.execute(''' SELECT r.ratings, u.name AS reviewer FROM reviewpt r JOIN users u ON r.user_id = u.user_id WHERE r.pt_id = %s''', (pt_row['pt_id'],))
                             reviews = cur.fetchall()
 
                             if reviews:
@@ -414,7 +405,7 @@ def login(redirect_url='/'):
     with ui.row().classes('items-center gap-4'):
         username_box = ui.input('Username:')
         password_box = ui.input('Password', password=True, password_toggle_button=True)
-        ui.button('Log in', on_click=try_login).classes(
+        ui.button('Log in', on_click=try_login, color= 'pink').classes(
             'bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium py-2 px-4 rounded hover:opacity-90 shadow-md'
         )
 
