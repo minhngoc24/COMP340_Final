@@ -18,7 +18,7 @@ def homepage():
             font-family: 'Segoe UI', sans-serif;
             background: linear-gradient(to bottom right, #f99aaa, #e0c3fc);
             color: #000000;
-            font-size: 40px;
+            font-size: 35px;
             text-align: center;
         }
 
