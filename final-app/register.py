@@ -9,7 +9,7 @@ from dbinfo import *
 from nicegui import ui, app
 
 #from page_protected import protected
-#from page_dashboard import dashboard
+#from page_dashboard import dashboard #
 
 # Connect to an existing database
 conn = psycopg.connect(f"host=dbclass.rhodescs.org dbname=flights user={DBUSER} password={DBPASS}")
@@ -31,7 +31,7 @@ def homepage():
     if username is not None:
         ui.label("You are logged in as user: " + username)
 
-<<<<<<< HEAD
+
         cur.execute('SELECT weight FROM USERS WHERE user_id = %s', (username,))
         weight = cur.fetchone()['weight']
         current_weight_label = ui.label(f'Current weight is: {weight}')
@@ -49,7 +49,7 @@ def homepage():
                 result.text = f"New weight is: {newweight_box.value}"
             else:
                 result.text = 'Please enter a valid user ID and weight.'
-=======
+
 
         def update_weight():
 
@@ -59,7 +59,7 @@ def homepage():
 
             cur.execute('UPDATE USERS SET weight = newweight_box where user_id = user_box')
 
->>>>>>> 8eea45c7df6f32a89b0211ce2d2d6f0a154e2794
+
 
         ui.button('Change Weight', on_click=update_weight)
 
