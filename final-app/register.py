@@ -41,6 +41,9 @@ def homepage():
         playlist_result = ui.label('')
         result = ui.label('')
         goal_result = ui.label('')
+        del_recipe_result = ui.label('')
+
+
 
 
         def get_recipes():
@@ -67,6 +70,9 @@ def homepage():
             def hide_my_table():
                 recipe_card.set_visibility(False)
 
+            cur.execute(
+                "SELECT * FROM MakeRecipes natural join USERS natural join Recipes where MakeRecipes.user_id = %s",
+                [username])
             rows = cur.fetchall()
             with ui.card() as recipe_card:
                 ui.label("My Recipes")
@@ -91,14 +97,34 @@ def homepage():
         def visible_change_goal():
             goal_card.set_visibility(True)
 
+        def del_recipe_visibility():
+            del_recipe_card.set_visibility(True)
+
+
+
+
         ui.button('Change Weight', on_click= visible_change_weight)
         ui.button('Change Playlist', on_click=visible_change_playlist)
         ui.button('Change Goal', on_click=visible_change_goal)
         ui.button('Search Recipes', on_click=get_recipes)
         ui.button('Get my recipes', on_click=get_my_recipes)
+        ui.button('Delete Recipe', on_click=del_recipe_visibility)
 
+        def del_recipes():
+            if del_recipe_box.value:
+                cur.execute('DELETE FROM MakeRecipes where rid = %s and user_id = %s', [del_recipe_box.value, username])
+                cur.execute('DELETE FROM Recipes where rid = %s', [del_recipe_box.value])
+                conn.commit()
+                del_recipe_result.text = f"Deleted recipe with ID: {del_recipe_box.value}"
 
+                del_recipe_card.set_visibility(False)
+            else:
+                del_recipe_result.text = 'Please enter a valid playlist'
 
+        with ui.card() as del_recipe_card:
+            del_recipe_box = ui.input('Recipe ID:')
+            ui.button('Confirm', on_click=del_recipes)
+        del_recipe_card.set_visibility(False)
 
         def update_weight():
             if user_box_weight.value == username and newweight_box.value:
