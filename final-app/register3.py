@@ -95,6 +95,7 @@ def homepage():
     username = app.storage.user.get('username', None)  # default if not logged in is None
     if username is not None:
         ui.label("You are logged in as user: " + username)
+        ui.label("⬇ Please scroll down to choose what you want to do.")
 
         cur.execute('SELECT weight, playlist_genre, fitness_goal FROM USERS WHERE user_id = %s', (username,))
         row = cur.fetchone()
