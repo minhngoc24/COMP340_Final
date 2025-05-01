@@ -91,6 +91,9 @@ def homepage():
        def visible_find_gym():
            findgym_card.set_visibility(True)
 
+       def visible_find_pt():
+           findpt_card.set_visibility(True)
+
        def get_my_recipes():
            def hide_my_table():
                recipe_card.set_visibility(False)
@@ -117,9 +120,8 @@ def homepage():
        ui.button('Change Goal', on_click=visible_change_goal)
        ui.button('Search Recipes', on_click=get_recipes)
        ui.button('Get my recipes', on_click=get_my_recipes)
-
        ui.button('Find gyms within a radius', on_click=visible_find_gym)
-
+       ui.button('Find your Personal Trainer', on_click=visible_find_pt)
 
        def update_weight():
            if user_box_weight.value == username and newweight_box.value:
@@ -234,6 +236,39 @@ def homepage():
 
        add_recipe_card.set_visibility(False)
 
+       with ui.card() as findpt_card:
+           get_user = ui.input('Enter user ID to look up PT:')
+           pt_results = ui.column()
+
+           def find_pts():
+               if get_user.value.isdigit():
+                   # Step 1: Get PT info
+                   cur.execute('''
+                      SELECT p.name, p.experience, p.phone
+                      FROM match m
+                      JOIN pt p ON m.pt_id = p.pt_id
+                      WHERE m.user_id = %s
+                  ''', (get_user.value,))
+                   pt_row = cur.fetchone()
+
+                   cur.execute('SELECT fitness_goal FROM users WHERE user_id = %s', (get_user.value,))
+                   user_row = cur.fetchone()
+
+                   pt_results.clear()
+                   with pt_results:
+                       if pt_row and user_row:
+                           ui.label(f" {pt_row['name']} — {pt_row['experience']} yrs experience,  {pt_row['phone']}")
+                           ui.label(f" Helping you achieve your goal: {user_row['fitness_goal']}")
+                       else:
+                           ui.label("PT or goal not found for that user.")
+               else:
+                   pt_results.clear()
+                   with pt_results:
+                       ui.label("Please enter a valid user ID.")
+
+           ui.button('Show PT', on_click=find_pts)
+
+       findpt_card.set_visibility(False)
 
        with ui.card() as findgym_card:
            radius_input = ui.input('Enter radius:')
@@ -262,6 +297,7 @@ def homepage():
 
 
        findgym_card.set_visibility(False)
+
 
 
 
