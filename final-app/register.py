@@ -137,6 +137,13 @@ def homepage():
             ui.button('Confirm goal', on_click=update_goal)
         goal_card.set_visibility(False)
 
+        add_recipe_result = ui.label('')
+
+        def visible_add_recipe():
+            add_recipe_card.set_visibility(True)
+
+        ui.button('Add a New Recipe', on_click=visible_add_recipe)
+
         def confirm_add_recipe():
             try:
                 rid = int(rid_input.value)
@@ -145,16 +152,21 @@ def homepage():
                 calories = int(calories_input.value)
                 prep_time = int(prep_time_input.value)
 
+                # Insert into recipes
                 cur.execute(
                     "INSERT INTO recipes (rid, description, meal_name, calories, prep_time) VALUES (%s, %s, %s, %s, %s)",
                     (rid, description, meal_name, calories, prep_time))
                 cur.execute("INSERT INTO makerecipes(user_id, rid) VALUES (%s, %s)", (username, rid))
                 conn.commit()
 
-                print(f"Added recipe '{meal_name}' successfully!")
+                conn.commit()
+
+                add_recipe_result.text = f"Recipe '{meal_name}' added and marked as made!"
                 add_recipe_card.set_visibility(False)
+
             except Exception as e:
-               print(f" Error: {str(e)}")
+                conn.rollback()
+                add_recipe_result.text = f" Error: {str(e)}"
 
         with ui.card() as add_recipe_card:
             rid_input = ui.input('Recipe ID (Rid)')
