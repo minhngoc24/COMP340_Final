@@ -29,6 +29,7 @@ def get_user():
 def homepage():
    ui.label("Welcome to the homepage!")
    ui.link("Login", '/login')
+   ui.link("Logout", '/logout')
 
 
    username = app.storage.user.get('username', None)  # default if not logged in is None
@@ -308,8 +309,6 @@ def homepage():
 
 
 
-   ui.link("Login", '/login')
-   ui.link("Logout", '/logout')
    #ui.link("Password-protected test page", '/protected')
    #ui.link("Dashboard", '/dashboard')
 
@@ -357,5 +356,5 @@ def logout():
 
 #def change_goal():
 
-ui.run(reload=False, storage_secret='THIS_NEEDS_TO_BE_CHANGED')
+ui.run(reload=False, storage_secret='THIS_NEEDS_TO_BE_CHANGED', port = 8000)
 
