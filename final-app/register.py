@@ -113,6 +113,36 @@ def homepage():
             ui.button('Confirm goal', on_click=update_goal)
         goal_card.set_visibility(False)
 
+        def confirm_add_recipe():
+            try:
+                rid = int(rid_input.value)
+                description = description_input.value
+                meal_name = meal_name_input.value
+                calories = int(calories_input.value)
+                prep_time = int(prep_time_input.value)
+
+                cur.execute(
+                    "INSERT INTO recipes (rid, description, meal_name, calories, prep_time) VALUES (%s, %s, %s, %s, %s)",
+                    (rid, description, meal_name, calories, prep_time))
+                cur.execute("INSERT INTO makerecipes(user_id, rid) VALUES (%s, %s)", (username, rid))
+                conn.commit()
+
+                print(f"Added recipe '{meal_name}' successfully!")
+                add_recipe_card.set_visibility(False)
+            except Exception as e:
+               print(f" Error: {str(e)}")
+
+        with ui.card() as add_recipe_card:
+            rid_input = ui.input('Recipe ID (Rid)')
+            description_input = ui.input('Description')
+            meal_name_input = ui.input('Meal Name')
+            calories_input = ui.input('Calories')
+            prep_time_input = ui.input('Prep Time (minutes)')
+            ui.button('Add Recipe', on_click=confirm_add_recipe)
+
+        add_recipe_card.set_visibility(False)
+
+
 
     else:
         ui.label("You are not logged in.")
