@@ -1,9 +1,9 @@
 # Script to let us register students.
 
 import psycopg
-from aext_shared import user_id
+#from aext_shared import user_id
 from psycopg.rows import dict_row
-from xarray.core.weighted import Weighted
+#from xarray.core.weighted import Weighted
 
 from dbinfo import *
 from nicegui import ui, app
@@ -36,8 +36,11 @@ def homepage():
         weight = cur.fetchone()['weight']
         current_weight_label = ui.label(f'Current weight is: {weight}')
 
-        user_box = ui.input('User ID:')
-        newweight_box = ui.input('New Weight:')
+        def visible_change_weight():
+            weight_card.set_visibility(True)
+
+        ui.button('Change Weight', on_click= visible_change_weight)
+
         result = ui.label('')
 
         def update_weight():
@@ -47,10 +50,15 @@ def homepage():
                 conn.commit()
                 current_weight_label.text = f"Current weight is: {newweight_box.value}"
                 result.text = f"New weight is: {newweight_box.value}"
+                weight_card.set_visibility(False)
             else:
                 result.text = 'Please enter a valid user ID and weight.'
 
-
+        with ui.card() as weight_card:
+            user_box = ui.input('User ID:')
+            newweight_box = ui.input('New Weight:')
+            ui.button('Confirm weight', on_click=update_weight)
+        weight_card.set_visibility(False)
         def change_weight():
 
             weight = get_weight_for_user(username)
@@ -61,7 +69,7 @@ def homepage():
 
 
 
-        ui.button('Change Weight', on_click=update_weight)
+
 
 
 
@@ -89,7 +97,7 @@ def login(redirect_url = '/'):
 
     #if app.storage.user.get('authenticated', False):
     #        return RedirectResponse('/')
-    ui.label("Use a user_id numbfer for username and the grad year for password.")
+    ui.label("Use a user_id number for username and the grad year for password.")
     with ui.row().classes('items-center'):
         username_box = ui.input('Username:')
         password_box = ui.input('Password', password=True, password_toggle_button=True)
