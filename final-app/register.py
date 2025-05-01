@@ -51,7 +51,7 @@ def homepage():
                 result.text = 'Please enter a valid user ID and weight.'
 
 
-        def update_weight():
+        def change_weight():
 
             weight = get_weight_for_user(username)
             user_box = ui.input('User_id: ')
