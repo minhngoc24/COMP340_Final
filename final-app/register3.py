@@ -174,16 +174,16 @@ def homepage():
                 recipe_table.update()
                 recipe_card.set_visibility(True)
 
-        ui.button('Change Weight', on_click=visible_change_weight, color='cyan')
-        ui.button('Change Playlist', on_click=visible_change_playlist, color='cyan')
-        ui.button('Change Goal', on_click=visible_change_goal, color='cyan')
-        ui.button('Search Recipes', on_click=get_recipes, color='cyan')
-        ui.button('Delete Recipe', on_click=del_recipe_visibility, color='cyan')
-        ui.button('Get my recipes', on_click=get_my_recipes, color='cyan')
-        ui.button('Find gyms within a radius', on_click=visible_find_gym, color='cyan')
-        ui.button('Find your Personal Trainer', on_click=visible_find_pt, color='cyan')
-        ui.button("Review Gyms", on_click=visible_review_gym, color='cyan')
-        ui.button('Add a New Recipe', on_click=visible_add_recipe, color='cyan')
+        ui.button('Change Weight', on_click=visible_change_weight, color='purple')
+        ui.button('Change Playlist', on_click=visible_change_playlist, color='purple')
+        ui.button('Change Goal', on_click=visible_change_goal, color='purple')
+        ui.button('Search Recipes', on_click=get_recipes, color='green')
+        ui.button('Add a New Recipe', on_click=visible_add_recipe, color='green')
+        ui.button('Delete Recipe', on_click=del_recipe_visibility, color='green')
+        ui.button('Get my recipes', on_click=get_my_recipes, color='green')
+        ui.button('Find gyms within a radius', on_click=visible_find_gym, color='pink')
+        ui.button('Find your Personal Trainer', on_click=visible_find_pt, color='pink')
+        ui.button("Review Gyms", on_click=visible_review_gym, color='pink')
 
 
         def del_recipes():
