@@ -45,8 +45,17 @@ def homepage():
         def visible_change_playlist():
             playlist_card.set_visibility(True)
 
+        def get_recipes():
+            cur.execute('SELECT * from Recipes ')
+            rows = cur.fetchall()
+            return rows
+
         ui.button('Change Weight', on_click= visible_change_weight)
         ui.button('Change Playlist', on_click=visible_change_playlist)
+
+        #!!!
+        ui.button('Search Recipees', on_click=get_recipes)
+
 
 
 
