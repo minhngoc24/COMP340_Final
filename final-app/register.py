@@ -31,36 +31,36 @@ def homepage():
     if username is not None:
         ui.label("You are logged in as user: " + username)
 
-        cur.execute('SELECT weight, playlist_genre FROM USERS WHERE user_id = %s', (username,))
+        cur.execute('SELECT weight, playlist_genre, fitness_goal FROM USERS WHERE user_id = %s', (username,))
         row = cur.fetchone()
         weight = row['weight']
         playlist_genre = row['playlist_genre']
+        fitness_goal = row['fitness_goal']
 
 
         playlist_result = ui.label('')
         result = ui.label('')
+        goal_result = ui.label('')
+
         def visible_change_weight():
             weight_card.set_visibility(True)
 
         def visible_change_playlist():
             playlist_card.set_visibility(True)
 
-        def get_recipes():
-            cur.execute('SELECT * from Recipes ')
-            rows = cur.fetchall()
-            return rows
+
+        def visible_change_goal():
+            goal_card.set_visibility(True)
 
         ui.button('Change Weight', on_click= visible_change_weight)
         ui.button('Change Playlist', on_click=visible_change_playlist)
-
-        #!!!
-        ui.button('Search Recipees', on_click=get_recipes)
+        ui.button('Change Goal', on_click=visible_change_goal)
 
 
 
 
         def update_weight():
-            if user_box_weight.value.isdigit() and newweight_box.value:
+            if user_box_weight.value == username and newweight_box.value:
                 cur.execute('UPDATE USERS SET weight = %s WHERE user_id = %s',
                             (newweight_box.value, user_box_weight.value))
                 conn.commit()
@@ -77,7 +77,7 @@ def homepage():
         weight_card.set_visibility(False)
 
         def update_playlist():
-            if user_box_playlist.value.isdigit() and newPlaylist_box.value:
+            if user_box_playlist.value == username and newPlaylist_box.value:
                 cur.execute('UPDATE USERS SET playlist_genre = %s WHERE user_id = %s',
                             (newPlaylist_box.value, user_box_playlist.value))
                 conn.commit()
@@ -95,7 +95,23 @@ def homepage():
             ui.button('Confirm playlist', on_click=update_playlist)
         playlist_card.set_visibility(False)
 
+        def update_goal():
+            if user_box_goal.value == username and newGoal_box.value:
+                cur.execute('UPDATE USERS SET fitness_goal = %s WHERE user_id = %s',
+                            (newGoal_box.value, user_box_playlist.value))
+                conn.commit()
+                print(f"Current goal is: {newGoal_box.value}")
+                playlist_result.text = f"New goal is: {newGoal_box.value}"
+                playlist_card.set_visibility(False)
 
+            else:
+                goal_result.text = 'Please enter a valid playlist'
+
+        with ui.card() as goal_card:
+            user_box_goal = ui.input('User ID:')
+            newGoal_box = ui.input('New Goal:')
+            ui.button('Confirm goal', on_click=update_goal)
+        weight_card.set_visibility(False)
 
 
     else:
@@ -127,9 +143,6 @@ def login(redirect_url = '/'):
         username_box = ui.input('Username:')
         password_box = ui.input('Password', password=True, password_toggle_button=True)
         ui.button('Log in', on_click=try_login)
-
-
-
 
 
 def get_password_for_user(user_id):
