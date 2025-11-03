@@ -29,7 +29,6 @@ user_id,name,age,weight,goal,allergy,streak,playlist
 28, Matthew Nelson, 31, 175, Gain Weight, , 7, Classical
 29, Emily Walker, 20, 140, Stay Fit, Eggs, 12, Country
 30, Jackson Bell, 43, 230, Build Muscle, , 22, Metal
-30, Alex Walker_9, 41, 223, Gain Weight, Dairy, 21, Classical
 31, Riley Young_10, 28, 192, Lose Weight, Eggs, 30, Metal
 32, Riley Young_11, 40, 175, Lower Blood Pressure, Peanuts, 30, Hip Hop
 33, Riley King_12, 23, 189, Tone Muscles, Soy, 10, R&B
@@ -69,7 +68,6 @@ user_id,name,age,weight,goal,allergy,streak,playlist
 67, Avery Scott_46, 38, 177, Lower Blood Pressure, , 29, Reggaeton
 68, Jordan Scott_47, 27, 166, Gain Weight, , 15, Country
 69, Avery King_48, 37, 169, Stay Fit, , 1, Classical
-70, Casey Young_49, 22, 131, Gain Weight, Lactose, 7, Classical
 70, Casey Young_49, 22, 131, Gain Weight, Lactose, 7, Classical
 71, Morgan Scott_50, 45, 143, Lower Blood Pressure, Lactose, 20, Reggaeton
 72, Taylor Walker_51, 37, 140, Tone Muscles, Dairy, 19, Metal

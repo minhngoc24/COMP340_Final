@@ -2,14 +2,17 @@ import psycopg
 from psycopg.rows import dict_row
 from dbinfo import *
 
-# Connect to an existing database
-conn = psycopg.connect(f"host=dbclass.rhodescs.org dbname=practice user={DBUSER} password={DBPASS}")
+conn = psycopg.connect(
+    f"host=localhost dbname=gymfinder user={DBUSER} password={DBPASS}"
+)
 
-# Print the connection status
+print("✅ Connection successful!")
 print(f"Database: {conn.info.dbname}")
 print(f"User: {conn.info.user}")
 print(f"Host: {conn.info.host}")
 print(f"Port: {conn.info.port}")
 print(f"Backend PID: {conn.info.backend_pid}")
 print(f"Server version: {conn.info.server_version}")
-print(f"Default client encoding: {conn.info.encoding}")
+print(f"Client encoding: {conn.info.encoding}")
+
+conn.close()

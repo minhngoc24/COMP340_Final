@@ -1,2 +1,4 @@
-DBUSER = "aslju-27"
+DBHOST = "localhost"
+DBNAME = "gymfinder"
+DBUSER = "ngocle"
 DBPASS = "aslju-27"
